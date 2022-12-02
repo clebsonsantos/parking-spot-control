@@ -1,10 +1,11 @@
 package com.api.parckingcontroll.services;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 import javax.transaction.Transactional;
 
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.api.parckingcontroll.models.ParkingSpotModel;
@@ -38,5 +39,9 @@ public class ParkingSpotService {
 
   public List<ParkingSpotModel> findAll() {
     return parkingSpotRepository.findAll();
+  }
+
+  public Optional<ParkingSpotModel> findById(UUID id) {
+    return parkingSpotRepository.findById(id);
   }
 }
