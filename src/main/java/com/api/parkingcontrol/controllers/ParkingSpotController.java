@@ -1,4 +1,4 @@
-package com.api.parckingcontroll.controllers;
+package com.api.parkingcontrol.controllers;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -21,9 +21,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.parckingcontroll.dtos.ParkingSpotDTO;
-import com.api.parckingcontroll.models.ParkingSpotModel;
-import com.api.parckingcontroll.services.ParkingSpotService;
+import com.api.parkingcontrol.dtos.ParkingSpotDTO;
+import com.api.parkingcontrol.models.ParkingSpotModel;
+import com.api.parkingcontrol.services.ParkingSpotService;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)

@@ -1,4 +1,4 @@
-package com.api.parckingcontroll.services;
+package com.api.parkingcontrol.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import com.api.parckingcontroll.models.ParkingSpotModel;
-import com.api.parckingcontroll.repositories.ParkingSpotRepository;
+import com.api.parkingcontrol.models.ParkingSpotModel;
+import com.api.parkingcontrol.repositories.ParkingSpotRepository;
 
 @Service
 public class ParkingSpotService {
